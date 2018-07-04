@@ -1,0 +1,16 @@
+extends ../layout/default.pug
+
+block content
+    .container
+        h1
+            |Podsumowanie
+        if (formMessage.length)
+            .alert.alert-primary #{ formMessage }
+
+        if (phone.length)
+            p #{ phone }
+
+        if (message.length)
+            p #{ message }
+
+            

@@ -1,0 +1,16 @@
+extends ../layout/default.pug
+
+block content
+    .container
+        h1
+            |Formularz
+        form(action="/applications" method="POST")
+            .form-group
+                input.form-control(placeholder="Podaj imię" type="text" name="name")
+            .form-group
+                input.form-control(placeholder="Podaj telefon" type="text" name="phone")
+            .form-group
+                textarea.form-control(placeholder="Wiadomość" name="message")
+            button.btn.btn-primary Wyślij
+
+            
